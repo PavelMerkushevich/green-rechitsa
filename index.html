@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
     <header class="header">
       <div class="title">
         <div class="title__content">
@@ -19,14 +19,24 @@
         </div>
       </div>
       <nav class="map-switcher">
-        <button type="button" class="button map-switcher__button map-switcher__active-button">Изучаемые кварталы</button>
-        <button type="button" class="button map-switcher__button map-switcher__inactive-button">Количество деревьев (пример)</button>
+        <button type="button" class="button map-switcher__button map-switcher__active-button">Изучаемые
+          кварталы</button>
+        <button type="button" class="button map-switcher__button map-switcher__inactive-button">Количество деревьев
+          (пример)</button>
       </nav>
     </header>
     <main class="main">
       <div id="map"></div>
     </main>
   </div>
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        // document.getElementById('wrapper').style.visibility = 'visible';
+      }, 100);
+      
+    });
+  </script>
   <script type="module" src="./main.js"></script>
 </body>
 
