@@ -84,21 +84,37 @@ body {
   font-size: 95%;
 }
 
-.map-switcher__inactive-button:hover{
+.map-switcher__inactive-button:hover {
   background-color: rgb(27, 27, 27);
 }
 
-.map-switcher__active-button{
+.map-switcher__active-button {
   background-color: #CCEB52;
   color: black;
 }
 
-.map, #map {
+.map,
+#map {
   width: 100%;
   height: 100%;
 }
 
-#map-with-trees{
+#map-with-trees {
   display: none;
 }
 
+.legend {
+  position: fixed;
+  z-index: 10000000000;
+  left: 10px;
+  bottom: 10px;
+  width: auto;
+  height: auto;
+  background-color: whitesmoke;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

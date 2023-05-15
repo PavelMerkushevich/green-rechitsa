@@ -3,7 +3,7 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {"trees": 50},
+      "properties": {"trees": 216},
       "geometry": {
         "coordinates": [
           [
@@ -82,7 +82,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 10},
+      "properties": {"trees": 41},
       "geometry": {
         "coordinates": [
           [
@@ -153,7 +153,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 100},
+      "properties": {"trees": 255},
       "geometry": {
         "coordinates": [
           [
@@ -205,7 +205,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 300},
+      "properties": {"trees": 53},
       "geometry": {
         "coordinates": [
           [
@@ -252,7 +252,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 150},
+      "properties": {"trees": 25},
       "geometry": {
         "coordinates": [
           [
@@ -287,7 +287,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 250},
+      "properties": {"trees": 141},
       "geometry": {
         "coordinates": [
           [
@@ -366,7 +366,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 450},
+      "properties": {"trees": 61},
       "geometry": {
         "coordinates": [
           [
@@ -397,7 +397,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 550},
+      "properties": {"trees": 212},
       "geometry": {
         "coordinates": [
           [
@@ -456,7 +456,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 160},
+      "properties": {"trees": 70},
       "geometry": {
         "coordinates": [
           [
@@ -495,7 +495,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 1150},
+      "properties": {"trees": 37},
       "geometry": {
         "coordinates": [
           [
@@ -534,7 +534,7 @@
     },
     {
       "type": "Feature",
-      "properties": {"trees": 140},
+      "properties": {"trees": 16},
       "geometry": {
         "coordinates": [
           [
