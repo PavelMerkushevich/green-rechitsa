@@ -3,7 +3,7 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 50},
       "geometry": {
         "coordinates": [
           [
@@ -82,7 +82,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 10},
       "geometry": {
         "coordinates": [
           [
@@ -153,7 +153,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 100},
       "geometry": {
         "coordinates": [
           [
@@ -205,7 +205,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 300},
       "geometry": {
         "coordinates": [
           [
@@ -252,7 +252,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 150},
       "geometry": {
         "coordinates": [
           [
@@ -287,7 +287,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 250},
       "geometry": {
         "coordinates": [
           [
@@ -362,12 +362,11 @@
           ]
         ],
         "type": "Polygon"
-      },
-      "id": 5
+      }
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 450},
       "geometry": {
         "coordinates": [
           [
@@ -398,7 +397,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 550},
       "geometry": {
         "coordinates": [
           [
@@ -457,7 +456,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 160},
       "geometry": {
         "coordinates": [
           [
@@ -496,7 +495,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 1150},
       "geometry": {
         "coordinates": [
           [
@@ -535,7 +534,7 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {"trees": 140},
       "geometry": {
         "coordinates": [
           [
