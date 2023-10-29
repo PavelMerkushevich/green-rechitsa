@@ -6,12 +6,13 @@
   <link rel="icon" type="image/x-icon" href="/assets/favicon-04e45a19.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GreenRechitsa</title>
-  <script type="module" crossorigin src="/assets/index-eb8d3698.js"></script>
-  <link rel="stylesheet" href="/assets/index-4738e246.css">
+  <script type="module" crossorigin src="/assets/index-94104d13.js"></script>
+  <link rel="stylesheet" href="/assets/index-a1a8038e.css">
 </head>
 
 <body>
   <div class="wrapper" id="wrapper">
+    <div class="header-wrapper">
     <header class="header">
       <div class="title">
         <div class="title__content">
@@ -19,21 +20,50 @@
             <h1 class="h1">GreenRechitsa</h1>
           </a>
         </div>
+        <div class="burger-wrapper">
+          <div class="burger-container" id="burger-container">
+            <div class="burger" id="burger">
+              <hr class="burger-line">
+              <hr class="burger-line">
+              <hr class="burger-line">
+            </div>
+          </div>
+        </div>
       </div>
-      <nav class="map-switcher">
-        <button type="button" class="button map-switcher__button map-switcher__active-button" id="showExploreQuartals">Изучаемые
-          кварталы</button>
-        <button type="button" class="button map-switcher__button map-switcher__inactive-button" id="showTrees">Количество деревьев</button>
-      </nav>
+      
     </header>
+    <nav class="map-switcher" id="map-switcher">
+      <button type="button" class="button map-switcher__button map-switcher__active-button" id="showExploreQuartals">Изучаемые
+        кварталы</button>
+      <button type="button" class="button map-switcher__button" id="showTrees">Количество деревьев</button>
+      <button type="button" class="button map-switcher__button" id="showGrooming">Ухоженность</button>
+      <button type="button" class="button map-switcher__button" id="showMed">Болезни</button>
+    </nav>
+  </div>
     <main class="main">
       <div id="map"></div>
       <div id="map-with-trees" class="map"></div>
+      <div id="map-with-grooming" class="map"></div>
+      <div id="map-with-med" class="map"></div>
       <div id="trees-legend" class="legend" style="display: none;">
-        <span style="display: flex; align-items: center;"><div style="width: 30px; height: 30px; background-color: #46E746; border: 1px solid green; border-radius: 5px;"></div> &nbsp; - Чем светлее цвет, тем меньше деревьев</span>
+        <span style="display: flex; align-items: center;"><div style="width: 30px; height: 30px; background-color: #46E746; border: 1px solid green; border-radius: 5px;"></div> &nbsp; - Мало деревьев</span>
         <span style="display: flex; align-items: center;">
           <div style="width: 30px; height: 30px; background-color: #466946; border: 1px solid green; border-radius: 5px;"></div>
-          &nbsp; - Чем темнее цвет, тем больше деревьев
+          &nbsp; - Много деревьев
+        </span>
+      </div>
+      <div id="grooming-legend" class="legend" style="display: none;">
+        <span style="display: flex; align-items: center;"><div style="width: 30px; height: 30px; background-color: rgb(200, 50, 0); border: 1px solid rgba(167, 42, 0); border-radius: 5px;"></div> &nbsp; - Плохая ухоженность</span>
+        <span style="display: flex; align-items: center;">
+          <div style="width: 30px; height: 30px; background-color: rgb(200, 250, 0); border: 1px solid rgba(167, 42, 0); border-radius: 5px;"></div>
+          &nbsp; - Хорошая ухоженность
+        </span>
+      </div>
+      <div id="med-legend" class="legend" style="display: none;">
+        <span style="display: flex; align-items: center;"><div style="width: 30px; height: 30px; background-color: rgb(219, 86, 86); border: 1px solid #965353; border-radius: 5px;"></div> &nbsp; - Есть пораженные деревья</span>
+        <span style="display: flex; align-items: center;">
+          <div style="width: 30px; height: 30px; background-color: rgb(54, 54, 54); border: 1px solid #965353; border-radius: 5px;"></div>
+          &nbsp; - Нет пораженных деревьев
         </span>
       </div>
     </main>
