@@ -6,7 +6,8 @@
             "properties": {
                 "trees": 107,
                 "grooming": 25,
-                "med": "true"
+                "med": 1,
+                "age": "medium"
             },
             "geometry": {
                 "coordinates": [
@@ -90,7 +91,8 @@
             "properties": {
                 "trees": 110,
                 "grooming": 25,
-                "med": "true"
+                "med": 1,
+                "age": "medium"
             },
             "geometry": {
                 "coordinates": [
@@ -166,7 +168,8 @@
             "properties": {
                 "trees": 99,
                 "grooming": 255,
-                "med": "true"
+                "med": 1,
+                "age": "old"
             },
             "geometry": {
                 "coordinates": [
@@ -222,7 +225,8 @@
             "properties": {
                 "trees": 97,
                 "grooming": 100,
-                "med": "true"
+                "med": 1,
+                "age": "young"
             },
             "geometry": {
                 "coordinates": [
@@ -274,7 +278,8 @@
             "properties": {
                 "trees": 69,
                 "grooming": 100,
-                "med": "false"
+                "med": 0,
+                "age": "medium"
             },
             "geometry": {
                 "coordinates": [
@@ -314,7 +319,8 @@
             "properties": {
                 "trees": 346,
                 "grooming": 10,
-                "med": "true"
+                "med": 1,
+                "age": "medium"
             },
             "geometry": {
                 "coordinates": [
@@ -398,7 +404,8 @@
             "properties": {
                 "trees": 124,
                 "grooming": 25,
-                "med": "true"
+                "med": 1,
+                "age": "medium"
             },
             "geometry": {
                 "coordinates": [
@@ -434,7 +441,8 @@
             "properties": {
                 "trees": 346,
                 "grooming": 141,
-                "med": "false"
+                "med": 0,
+                "age": "young"
             },
             "geometry": {
                 "coordinates": [
@@ -498,7 +506,8 @@
             "properties": {
                 "trees": 150,
                 "grooming": 10,
-                "med": "true"
+                "med": 1,
+                "age": "medium"
             },
             "geometry": {
                 "coordinates": [
@@ -542,7 +551,8 @@
             "properties": {
                 "trees": 168,
                 "grooming": 10,
-                "med": "true"
+                "med": 1,
+                "age": "medium"
             },
             "geometry": {
                 "coordinates": [
@@ -586,7 +596,8 @@
             "properties": {
                 "trees": 46,
                 "grooming": 100,
-                "med": "true"
+                "med": 1,
+                "age": "medium"
             },
             "geometry": {
                 "coordinates": [

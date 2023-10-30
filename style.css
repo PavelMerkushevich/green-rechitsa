@@ -166,6 +166,10 @@ body {
   display: none;
 }
 
+#map-with-age {
+  display: none;
+}
+
 .legend {
   position: fixed;
   z-index: 10000000000;
