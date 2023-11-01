@@ -6,8 +6,8 @@
   <link rel="icon" type="image/x-icon" href="/assets/favicon-04e45a19.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GreenRechitsa</title>
-  <script type="module" crossorigin src="/assets/index-cddbfa33.js"></script>
-  <link rel="stylesheet" href="/assets/index-61fa64ec.css">
+  <script type="module" crossorigin src="/assets/index-511253fc.js"></script>
+  <link rel="stylesheet" href="/assets/index-81182663.css">
 </head>
 
 <body>
@@ -40,6 +40,7 @@
         <button type="button" class="button map-switcher__button" id="showGrooming">Ухоженность</button>
         <button type="button" class="button map-switcher__button" id="showMed">Болезни</button>
         <button type="button" class="button map-switcher__button" id="showAge">Возраст</button>
+        <button type="button" class="button map-switcher__button" id="showDom">Доминантные виды</button>
       </nav>
     </div>
     <main class="main">
@@ -48,6 +49,7 @@
       <div id="map-with-grooming" class="map"></div>
       <div id="map-with-med" class="map"></div>
       <div id="map-with-age" class="map"></div>
+      <div id="map-with-dom" class="map"></div>
       <div id="trees-legend" class="legend" style="display: none;">
         <span style="display: flex; align-items: center;">
           <div
@@ -104,6 +106,32 @@
             style="width: 30px; height: 30px; background-color: rgb(0, 66, 61, 0.8); border: 1px solid #0d2927; border-radius: 5px;">
           </div>
           &nbsp; - Старые
+        </span>
+      </div>
+
+      <div id="dom-legend" class="legend" style="display: none;">
+        <span style="display: flex; align-items: center;">
+          <div
+            style="width: 30px; height: 30px; background-color: rgba(2, 243, 223, 0.7); border: 1px solid #202020; border-radius: 5px;">
+          </div> &nbsp; - Береза
+        </span>
+        <span style="display: flex; align-items: center;">
+          <div
+            style="width: 30px; height: 30px; background-color: rgba(225, 119, 27, 0.7); border: 1px solid #202020; border-radius: 5px;">
+          </div>
+          &nbsp; - Клен
+        </span>
+        <span style="display: flex; align-items: center;">
+          <div
+            style="width: 30px; height: 30px; background-color: rgba(47, 186, 22, 0.7); border: 1px solid #202020; border-radius: 5px;">
+          </div>
+          &nbsp; - Тополь
+        </span>
+        <span style="display: flex; align-items: center;">
+          <div
+            style="width: 30px; height: 30px; background-color: rgba(100, 100, 100, 0.7); border: 1px solid #202020; border-radius: 5px;">
+          </div>
+          &nbsp; - Не определено 
         </span>
       </div>
 

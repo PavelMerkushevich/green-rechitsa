@@ -23,7 +23,7 @@ const mapWithTrees = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals.geojson'
+        url: 'quartals01.geojson'
       }),
     }),
   ],
@@ -36,7 +36,7 @@ const mapWithTrees = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayer = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals01.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -81,7 +81,7 @@ const map = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals.geojson'
+        url: 'quartals01.geojson'
       }),
     }),
   ],
@@ -101,7 +101,7 @@ const mapWithGrooming = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals.geojson'
+        url: 'quartals01.geojson'
       }),
     }),
   ],
@@ -114,7 +114,7 @@ const mapWithGrooming = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayerGrooming = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals01.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -161,7 +161,7 @@ const mapWithMed = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals.geojson'
+        url: 'quartals01.geojson'
       }),
     }),
   ],
@@ -174,7 +174,7 @@ const mapWithMed = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayerMed = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals01.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -217,7 +217,7 @@ const mapWithAge = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals.geojson'
+        url: 'quartals01.geojson'
       }),
     }),
   ],
@@ -230,7 +230,7 @@ const mapWithAge = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayerAge = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals01.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -269,23 +269,92 @@ const getStyleAge = (feature) => {
 vectorLayerAge.setStyle(getStyleAge);
 
 
+/////////////////////////////////////////////////////////////////////
+
+
+const mapWithDom = new Map({
+  target: 'map-with-dom',
+  layers: [
+    new TileLayer({
+      source: new OSM()
+    }),
+    new VectorLayer({
+      source: new VectorSource({
+        format: new GeoJSON(),
+        url: 'quartals01.geojson'
+      }),
+    }),
+  ],
+  view: new View({
+    center: fromLonLat([23.650737, 52.101781]),
+    zoom: 14
+  })
+});
+
+// Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
+const vectorLayerDom = new VectorLayer({
+  source: new VectorSource({
+    url: 'quartals01.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    format: new GeoJSON()
+  })
+});
+
+// Добавляем векторный слой на карту
+mapWithDom.addLayer(vectorLayerDom);
+
+// Создаем функцию, которая возвращает стиль для векторного слоя в зависимости от количества деревьев в квартале
+const getStyleDom = (feature) => {
+  // Получаем количество деревьев в квартале из свойства trees
+  const dom = feature.get('dom');
+  // Определяем цвет заливки квартала по шкале от светло-зеленого до темно-зеленого
+  let color;
+  if (dom === "bereza") {
+    color = "rgba(2, 243, 223, 0.7)";
+  }
+  if (dom === "klen") {
+    color = "rgba(225, 119, 27, 0.7)";
+  }
+  if (dom === "topol") {
+    color = "rgba(47, 186, 22, 0.7)";
+  }
+  if (dom === "und") {
+    color = "rgba(100, 100, 100, 0.7)";
+  }
+  // Возвращаем стиль с заливкой квартала цветом color
+  return new Style({
+    stroke: new Stroke({
+      color: 'rgba(0, 0, 0, 0.1)', // Цвет границы
+      width: 1 // Толщина границы
+    }),
+    fill: new Fill({
+      color: color,
+    })
+  });
+};
+
+// Устанавливаем стиль для векторного слоя с помощью функции getStyle
+vectorLayerDom.setStyle(getStyleDom);
+
+
 let buttonShowTrees = document.getElementById("showTrees");
 let buttonShowMap = document.getElementById("showExploreQuartals");
 let buttonShowGrooming = document.getElementById("showGrooming");
 let buttonShowMed = document.getElementById("showMed");
 let buttonShowAge = document.getElementById("showAge");
+let buttonShowDom = document.getElementById("showDom");
 
 let elMap = document.getElementById("map");
 let elMapWithTrees = document.getElementById("map-with-trees");
 let elMapWithGrooming = document.getElementById("map-with-grooming");
 let elMapWithMed = document.getElementById("map-with-med");
 let elMapWithAge = document.getElementById("map-with-age");
+let elMapWithDom = document.getElementById("map-with-dom");
 
 let treesLegend = document.getElementById("trees-legend");
 let groomingLegend = document.getElementById("grooming-legend");
 let medLegend = document.getElementById("med-legend");
 let ageLegend = document.getElementById("age-legend");
-
+let domLegend = document.getElementById("dom-legend");
 
 buttonShowTrees.addEventListener("click", () => {
   elMap.style.display = "none";
@@ -303,6 +372,10 @@ buttonShowTrees.addEventListener("click", () => {
   elMapWithAge.style.display = "none";
   buttonShowAge.classList.remove('map-switcher__active-button');
   ageLegend.style.display = "none";
+
+  elMapWithDom.style.display = "none";
+  buttonShowDom.classList.remove('map-switcher__active-button');
+  domLegend.style.display = "none";
 })
 
 buttonShowMap.addEventListener("click", () => {
@@ -321,6 +394,10 @@ buttonShowMap.addEventListener("click", () => {
   elMapWithAge.style.display = "none";
   buttonShowAge.classList.remove('map-switcher__active-button');
   ageLegend.style.display = "none";
+
+  elMapWithDom.style.display = "none";
+  buttonShowDom.classList.remove('map-switcher__active-button');
+  domLegend.style.display = "none";
 })
 
 buttonShowGrooming.addEventListener("click", () => {
@@ -339,6 +416,10 @@ buttonShowGrooming.addEventListener("click", () => {
   elMapWithAge.style.display = "none";
   buttonShowAge.classList.remove('map-switcher__active-button');
   ageLegend.style.display = "none";
+
+  elMapWithDom.style.display = "none";
+  buttonShowDom.classList.remove('map-switcher__active-button');
+  domLegend.style.display = "none";
 })
 
 buttonShowMed.addEventListener("click", () => {
@@ -357,6 +438,10 @@ buttonShowMed.addEventListener("click", () => {
   elMapWithAge.style.display = "none";
   buttonShowAge.classList.remove('map-switcher__active-button');
   ageLegend.style.display = "none";
+
+  elMapWithDom.style.display = "none";
+  buttonShowDom.classList.remove('map-switcher__active-button');
+  domLegend.style.display = "none";
 })
 
 buttonShowAge.addEventListener("click", () => {
@@ -375,6 +460,32 @@ buttonShowAge.addEventListener("click", () => {
   elMapWithAge.style.display = "block";
   buttonShowAge.classList.add('map-switcher__active-button');
   ageLegend.style.display = "flex";
+
+  elMapWithDom.style.display = "none";
+  buttonShowDom.classList.remove('map-switcher__active-button');
+  domLegend.style.display = "none";
+})
+
+buttonShowDom.addEventListener("click", () => {
+  elMap.style.display = "none";
+  elMapWithTrees.style.display = "none";
+  elMapWithGrooming.style.display = "none";
+  elMapWithMed.style.display = "none";
+  treesLegend.style.display = "none";
+  groomingLegend.style.display = "none";
+  medLegend.style.display = "none";
+  buttonShowTrees.classList.remove('map-switcher__active-button');
+  buttonShowMap.classList.remove('map-switcher__active-button');
+  buttonShowGrooming.classList.remove('map-switcher__active-button');
+  buttonShowMed.classList.remove('map-switcher__active-button');
+
+  elMapWithAge.style.display = "none";
+  buttonShowAge.classList.remove('map-switcher__active-button');
+  ageLegend.style.display = "none";
+
+  elMapWithDom.style.display = "block";
+  buttonShowDom.classList.add('map-switcher__active-button');
+  domLegend.style.display = "flex";
 })
 
 

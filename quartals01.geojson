@@ -7,7 +7,8 @@
                 "trees": 107,
                 "grooming": 25,
                 "med": 1,
-                "age": "medium"
+                "age": "medium",
+                "dom": "bereza"
             },
             "geometry": {
                 "coordinates": [
@@ -92,7 +93,8 @@
                 "trees": 110,
                 "grooming": 25,
                 "med": 1,
-                "age": "medium"
+                "age": "medium",
+                "dom": "bereza"
             },
             "geometry": {
                 "coordinates": [
@@ -169,7 +171,8 @@
                 "trees": 99,
                 "grooming": 255,
                 "med": 1,
-                "age": "old"
+                "age": "old",
+                "dom": "bereza"
             },
             "geometry": {
                 "coordinates": [
@@ -226,7 +229,8 @@
                 "trees": 97,
                 "grooming": 100,
                 "med": 1,
-                "age": "young"
+                "age": "young",
+                "dom": "bereza"
             },
             "geometry": {
                 "coordinates": [
@@ -279,7 +283,8 @@
                 "trees": 69,
                 "grooming": 100,
                 "med": 0,
-                "age": "medium"
+                "age": "medium",
+                "dom": "klen"
             },
             "geometry": {
                 "coordinates": [
@@ -320,7 +325,8 @@
                 "trees": 346,
                 "grooming": 10,
                 "med": 1,
-                "age": "medium"
+                "age": "medium",
+                "dom": "klen"
             },
             "geometry": {
                 "coordinates": [
@@ -405,7 +411,8 @@
                 "trees": 124,
                 "grooming": 25,
                 "med": 1,
-                "age": "medium"
+                "age": "medium",
+                "dom": "und"
             },
             "geometry": {
                 "coordinates": [
@@ -442,7 +449,8 @@
                 "trees": 346,
                 "grooming": 141,
                 "med": 0,
-                "age": "young"
+                "age": "young",
+                "dom": "bereza"
             },
             "geometry": {
                 "coordinates": [
@@ -507,7 +515,8 @@
                 "trees": 150,
                 "grooming": 10,
                 "med": 1,
-                "age": "medium"
+                "age": "medium",
+                "dom": "klen"
             },
             "geometry": {
                 "coordinates": [
@@ -552,7 +561,8 @@
                 "trees": 168,
                 "grooming": 10,
                 "med": 1,
-                "age": "medium"
+                "age": "medium",
+                "dom": "topol"
             },
             "geometry": {
                 "coordinates": [
@@ -597,7 +607,8 @@
                 "trees": 46,
                 "grooming": 100,
                 "med": 1,
-                "age": "medium"
+                "age": "medium",
+                "dom": "und"
             },
             "geometry": {
                 "coordinates": [
