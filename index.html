@@ -39,6 +39,7 @@
         <button type="button" class="button map-switcher__button" id="showMed">Болезни</button>
         <button type="button" class="button map-switcher__button" id="showAge">Возраст</button>
         <button type="button" class="button map-switcher__button" id="showDom">Доминантные виды</button>
+        <button type="button" class="button map-switcher__button" id="showSubdom">Субдоминантные виды</button>
       </nav>
     </div>
     <main class="main">
@@ -48,6 +49,7 @@
       <div id="map-with-med" class="map"></div>
       <div id="map-with-age" class="map"></div>
       <div id="map-with-dom" class="map"></div>
+      <div id="map-with-subdom" class="map"></div>
       <div id="trees-legend" class="legend" style="display: none;">
         <span style="display: flex; align-items: center;">
           <div
@@ -129,7 +131,26 @@
           <div
             style="width: 30px; height: 30px; background-color: rgba(100, 100, 100, 0.7); border: 1px solid #202020; border-radius: 5px;">
           </div>
-          &nbsp; - Не определено 
+          &nbsp; - Разное 
+        </span>
+      </div>
+      <div id="subdom-legend" class="legend" style="display: none;">
+        <span style="display: flex; align-items: center;">
+          <div
+            style="width: 30px; height: 30px; background-color: rgba(2, 243, 223, 0.7); border: 1px solid #202020; border-radius: 5px;">
+          </div> &nbsp; - Осина
+        </span>
+        <span style="display: flex; align-items: center;">
+          <div
+            style="width: 30px; height: 30px; background-color: rgba(225, 119, 27, 0.7); border: 1px solid #202020; border-radius: 5px;">
+          </div>
+          &nbsp; - Клен
+        </span>
+        <span style="display: flex; align-items: center;">
+          <div
+            style="width: 30px; height: 30px; background-color: rgba(47, 186, 22, 0.7); border: 1px solid #202020; border-radius: 5px;">
+          </div>
+          &nbsp; - Ива
         </span>
       </div>
 
