@@ -23,7 +23,7 @@ const mapWithTrees = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals11122207.geojson'
+        url: 'quartals11131852.geojson'
       }),
     }),
   ],
@@ -36,7 +36,7 @@ const mapWithTrees = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayer = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals11122207.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals11131852.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -81,7 +81,7 @@ const map = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals11122207.geojson'
+        url: 'quartals11131852.geojson'
       }),
     }),
   ],
@@ -101,7 +101,7 @@ const mapWithGrooming = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals11122207.geojson'
+        url: 'quartals11131852.geojson'
       }),
     }),
   ],
@@ -114,7 +114,7 @@ const mapWithGrooming = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayerGrooming = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals11122207.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals11131852.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -161,7 +161,7 @@ const mapWithMed = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals11122207.geojson'
+        url: 'quartals11131852.geojson'
       }),
     }),
   ],
@@ -174,7 +174,7 @@ const mapWithMed = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayerMed = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals11122207.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals11131852.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -217,7 +217,7 @@ const mapWithAge = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals11122207.geojson'
+        url: 'quartals11131852.geojson'
       }),
     }),
   ],
@@ -230,7 +230,7 @@ const mapWithAge = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayerAge = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals11122207.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals11131852.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -281,7 +281,7 @@ const mapWithDom = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals11122207.geojson'
+        url: 'quartals11131852.geojson'
       }),
     }),
   ],
@@ -294,7 +294,7 @@ const mapWithDom = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayerDom = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals11122207.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals11131852.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });
@@ -347,7 +347,7 @@ const mapWithSubdom = new Map({
     new VectorLayer({
       source: new VectorSource({
         format: new GeoJSON(),
-        url: 'quartals11122207.geojson'
+        url: 'quartals11131852.geojson'
       }),
     }),
   ],
@@ -360,7 +360,7 @@ const mapWithSubdom = new Map({
 // Создаем векторный слой с данными о кварталах речицы в формате GeoJSON
 const vectorLayerSubdom = new VectorLayer({
   source: new VectorSource({
-    url: 'quartals11122207.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
+    url: 'quartals11131852.geojson', // URL сервиса, который возвращает данные о кварталах речицы в формате GeoJSON
     format: new GeoJSON()
   })
 });

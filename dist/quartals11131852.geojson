@@ -8,7 +8,8 @@
                 "grooming": 25,
                 "med": 1,
                 "age": "medium",
-                "dom": "bereza"
+                "dom": "bereza",
+                "subdom": "klen"
             },
             "geometry": {
                 "coordinates": [
@@ -94,7 +95,8 @@
                 "grooming": 25,
                 "med": 1,
                 "age": "medium",
-                "dom": "bereza"
+                "dom": "bereza",
+                "subdom": "osina"
             },
             "geometry": {
                 "coordinates": [
@@ -172,7 +174,8 @@
                 "grooming": 255,
                 "med": 1,
                 "age": "old",
-                "dom": "bereza"
+                "dom": "bereza",
+                "subdom": "klen"
             },
             "geometry": {
                 "coordinates": [
@@ -230,7 +233,8 @@
                 "grooming": 100,
                 "med": 1,
                 "age": "young",
-                "dom": "bereza"
+                "dom": "bereza",
+                "subdom": "klen"
             },
             "geometry": {
                 "coordinates": [
@@ -284,7 +288,8 @@
                 "grooming": 100,
                 "med": 0,
                 "age": "medium",
-                "dom": "klen"
+                "dom": "klen",
+                "subdom": "iva"
             },
             "geometry": {
                 "coordinates": [
@@ -326,7 +331,8 @@
                 "grooming": 10,
                 "med": 1,
                 "age": "medium",
-                "dom": "klen"
+                "dom": "klen",
+                "subdom": "osina"
             },
             "geometry": {
                 "coordinates": [
@@ -412,7 +418,8 @@
                 "grooming": 25,
                 "med": 1,
                 "age": "medium",
-                "dom": "und"
+                "dom": "klen",
+                "subdom": "osina"
             },
             "geometry": {
                 "coordinates": [
@@ -450,7 +457,8 @@
                 "grooming": 141,
                 "med": 0,
                 "age": "young",
-                "dom": "bereza"
+                "dom": "bereza",
+                "subdom": "klen"
             },
             "geometry": {
                 "coordinates": [
@@ -516,7 +524,8 @@
                 "grooming": 10,
                 "med": 1,
                 "age": "medium",
-                "dom": "klen"
+                "dom": "klen",
+                "subdom": "klen"
             },
             "geometry": {
                 "coordinates": [
@@ -562,7 +571,8 @@
                 "grooming": 10,
                 "med": 1,
                 "age": "medium",
-                "dom": "topol"
+                "dom": "topol",
+                "subdom": "osina"
             },
             "geometry": {
                 "coordinates": [
@@ -608,7 +618,8 @@
                 "grooming": 100,
                 "med": 1,
                 "age": "medium",
-                "dom": "und"
+                "dom": "und",
+                "subdom": "osina"
             },
             "geometry": {
                 "coordinates": [
